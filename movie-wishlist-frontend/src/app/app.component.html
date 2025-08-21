@@ -1,0 +1,34 @@
+<div class="app-container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/">Movie Wishlist</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/movies/wishlist" routerLinkActive="active">Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/movies/watched" routerLinkActive="active">Watched</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/movies/discover" routerLinkActive="active">Discover</a>
+          </li>
+        </ul>
+        <!-- Auth removed: hide profile/login/register -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="footer bg-dark text-white mt-5 py-3">
+    <div class="container text-center">
+      <span>© 2025 Movie Wishlist. All rights reserved.</span>
+    </div>
+  </footer>
+</div>

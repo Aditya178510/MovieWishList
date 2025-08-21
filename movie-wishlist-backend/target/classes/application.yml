@@ -1,0 +1,4 @@
+omdb:
+  api:
+    key: 77c3fe0a
+    url: http://www.omdbapi.com/
